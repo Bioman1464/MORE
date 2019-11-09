@@ -1,4 +1,4 @@
-#Sat Nov 09 16:31:11 MSK 2019
+#Sat Nov 09 21:46:10 MSK 2019
 base.0=/home/dynastery/AndroidStudioProjects/MORE/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="84dp"
+    android:elevation="-1dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/emptySpace"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"/>
+
+    <LinearLayout
+        android:background="#FF0033"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/emptySpace"
+        android:id="@+id/contentBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="56dp">
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:drawableLeft="@drawable/ic_android_black_24dp"
+            android:drawableStart="@drawable/ic_android_black_24dp"
+            android:text="Facebook"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/facebookView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdbdbd"
+            app:layout_constraintTop_toBottomOf="@id/textViewFacebook" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"
+            android:text="Twitter"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_baseline_navigation_24"
+            android:drawableStart="@drawable/ic_baseline_navigation_24"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/facebookView" />
+
+        <View
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/twitterView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdbdbd"
+            app:layout_constraintTop_toBottomOf="@id/textViewTwitter" />
+
+        <TextView
+            android:layout_margin="10dp"
+
+            android:id="@+id/textViewInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_baseline_favorite_border_24"
+            android:drawableStart="@drawable/ic_baseline_favorite_border_24"
+            android:text="Instagram"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/twitterView" />
+
+        <View
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/instagramView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdbdbd"
+            app:layout_constraintTop_toBottomOf="@id/textViewInstagram" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewLinkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:text="Linkedin"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/instagramView" />
+
+        <View
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdbdbd"
+            app:layout_constraintTop_toBottomOf="@id/textViewLinkedin" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
