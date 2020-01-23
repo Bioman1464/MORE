@@ -10,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class BottomNavigationViewBehavior : CoordinatorLayout.Behavior<BottomNavigationView>() {
 
     private var height = 0
+    private var h = 50
 
     fun onLayoutChild(
         parent: CoordinatorLayout?,
